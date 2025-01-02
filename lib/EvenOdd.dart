@@ -21,7 +21,7 @@ class _EvenOddState extends State<EvenOdd> {
             backgroundColor: Colors.white,
             floatingActionButton: FloatingActionButton(backgroundColor:Colors.lightGreenAccent, onPressed:(){
               n1=int.parse(n1Controller.text);
-              int mod=res=n1%2;
+              int mod=res=n1%2,
               setState(() {
                 if(mod==0)
                   _result = 'The number $n1 is Even';
